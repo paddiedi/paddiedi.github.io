@@ -1,6 +1,6 @@
 ---
 layout: post
 title:  <Post Title>
-date:   <year-month-day>
+date:   <2025-7-24>
 categories: news
 ---
