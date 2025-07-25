@@ -1,0 +1,32 @@
+---
+layout: post
+title:  Python koha testi
+date:   2025-07-24 12:00:00
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div class="container">
+    <p>Tässä on koodi kirjastoaikani python3-koodille,
+        joka hakee varauslistasta generoidusta excel-tiedostosta,
+        haettavat varaukset ja käsittelee näiden dataa alla olevien
+        koodien perusteella. Lopulta matplotlib sitten tekee frekvenssi-kuvaajat,
+        joka näytetään Flask palvelimella.
+    </p>
+    <pre><code class="language-python">{% include koha_calc.py %}</code></pre>
+    <a href="/downloads/python/koha_calc.py" download>Lataa calc.py</a>
+    <p>Yllä oleva calc.py koodi laskeskelee tarvittavat arvot. Seuraavaksi koodi joka
+        käsittelee Excel-tiedoston sisältämän datan Pandas-kirjaston avulla:
+    </p>
+    <pre><code class="language-python">{% include koha_excel.py %}</code></pre>
+     <a href="/downloads/python/koha_excel.py" download>Lataa excel.py</a>
+    <p>Ja vielä conf.py tiedoston lähdekoodi:</p>
+    <pre><code class="language-python">{% include koha_config.py %}</code></pre>
+     <a href="/downloads/python/koha_config.py" download>Lataa conf.py</a>
+    <p>conf.py hakee settings kansiosta tarvittavat filtterit, joita käyttämällä
+        Excel-tiedosto pystytään käsittelemään ja haettua noudettavat
+        varaukset yms.
+    </p>
+    <p>Tällä sivulla annettuja koodipätkiä saa hyödyntää :)</p>
+</div>
